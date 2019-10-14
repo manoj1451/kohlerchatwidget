@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>Miracle Software Systems Bot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--
+      This CDN points to the latest official release of Web Chat. If you need to test against Web Chat's latest bits, please refer to pointing to Web Chat's MyGet feed:
+      https://github.com/microsoft/BotFramework-WebChat#how-to-test-with-web-chats-latest-bits
+    -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script> -->
+  <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+
+</head>
+
+<body>
+  <div style="text-align: center; width: 100%;">
+    <img src="miracle-logo-light.png" style="height: 80px;    width: 250px;   margin-top: 10px;">
+  </div>
+  <div class="bot" id="Chatwindow" style="display: none">
+    <div class="chatview-panel" id="webchat"> </div>
+    <div class="botHeader">
+      <div>
+        Agent Conversation Panel
+      </div>
+      <div>
+        <img src="close_black.png"
+          style="float:right;width: 20px; height: 20px;position: relative;bottom: 20px; right: 4px; cursor: pointer;"
+          onclick="Popup1()" />
+      </div>
+    </div>
+    <div role="main">
+    </div>
+  </div>
+  <div id="containerrr" style="display:block">
+    <!--other page contents-->
+	<div id="mychat"  style="float:right" onclick="Popup()">
+	<i class="fa fa-comments chat-icon"></i>
+	</div>
+   <!--  <img id="mychat" src="message2.png" style="float:right ; width: 59px;" onclick="Popup()" /> -->
+  </div>
+  <script>
+    function Popup() {
+      document.getElementById("containerrr").style.display = "none"
+      document.getElementById("Chatwindow").style.display = "block"
+    }
+
+    function Popup1() {
+      document.getElementById("containerrr").style.display = "block"
+      document.getElementById("Chatwindow").style.display = "none"
+    }
+    window.WebChat.renderWebChat({
+      directLine: window.WebChat.createDirectLine({
+        token: 'zG4mq5AOmR8.KtX7cOWiG9TqtEvbMSVT7LYDolBWdvMNIfYFy4q-7DA'
+      }),
+      userID: '0597551f-056e-4235-93f6-4a793b765ee3',
+
+    }, document.getElementById('webchat'));
+
+
+    //  (async function() { 
+    //  // In this demo, we are using Direct Line token from MockBot. -->
+    //  // Your client code must provide either a secret or a token to talk to your bot. -->
+    //  // Tokens are more secure. To learn about the differences between secrets and tokens -->
+    //  // and to understand the risks associated with using secrets, visit https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-direct-line-3-0-authentication?view=azure-bot-service-4.0 -->
+
+    //  const res = await fetch('https://webchat-mockbot.azurewebsites.net/directline/token', { method: 'POST' });
+    //  const { token } = await res.json(); 
+
+    //  window.WebChat.renderWebChat( 
+    //  { 
+    //  directLine: window.WebChat.createDirectLine({ token }) 
+    //  }, 
+    //  document.getElementById('webchat')
+    //  ); 
+
+    //  document.querySelector('#webchat > *').focus(); 
+    // })().catch(err => console.error(err)); 
+    //Manoj
+  </script>
+</body>
+
+</html>

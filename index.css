@@ -1,0 +1,133 @@
+html,
+body {
+  overflow: hidden;
+background-size: cover;
+    background-repeat: no-repeat;
+     background-position: 35% 14%;	   
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(background.jpg);
+  font-family: 'Lato', sans-serif;
+  font-size: 14px !important;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.chatview-panel {
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 449px;
+  width: 367px;
+  background-color: white;
+}
+
+.bot {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  left: 88%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.main {
+  position: relative;
+}
+
+.botHeader {
+  background-color: rgba(236, 239, 241, 1);
+  box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  color: #292b2c;
+  font-weight: bold;
+  height: 30px;
+  left: -66px;
+  letter-spacing: 0.5px;
+  padding: 23px 8px 0px 7px;
+  position: absolute;
+  top: -149px;
+  text-align: center;
+  width: 351px;
+}
+
+/*Send button*/
+button.css-115fwte {
+  cursor: pointer;
+  display: inline-block;
+  background: center / 60% no-repeat url("paperplane.png");
+  background-color: #00aae7;
+}
+
+button.css-115fwte:hover {
+  cursor: pointer;
+  display: inline-block;
+  background: center / 60% no-repeat url("whitepaper.png");
+  /* background: center / 60% no-repeat url('https://img.icons8.com/ios-glyphs/30/000000/filled-sent.png')  ; */
+  background-color: #00aae7;
+}
+
+/* .SendButton{
+  position: relative;
+  top: 265px;
+  left: 265px; 
+} */
+svg {
+  display: none !important;
+}
+
+/*Attach button*/
+.css-1lzfo2b {
+  display: none;
+}
+
+.markdown.css-o3xlyv {
+  background-color: #00aae7;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.css-mhj5i1.from-user.bubble {
+  background-color: #f5f5f5;
+  color: #222;
+  border-radius: 10px;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+#mychat {
+  margin: 10px;
+  position: fixed;
+  bottom: 30px;
+  right: 18px;
+  z-index: 1000000;
+
+}
+
+.containerrr {
+  background-color: #ffffff;
+  width: 300px;
+  border: 5px solid grey;
+  padding: 20px;
+
+  height: 400px;
+}
+
+/* body {
+  min-height: 100vh;
+} */
+
+.flex-fill {
+  flex: 1 1 auto;
+}
+
+.chat-icon{
+	font-size: 37px!important;
+    color: #00aae7;
+}
+button.css-115fwte {
+    cursor: pointer;
+    display: inline-block;
+   
+    background-color: #ffffff;
